@@ -1,0 +1,132 @@
+<html>
+<head>
+<title>E-commerce website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style type="text/css">
+h1,h2,h3,h4,h5,h6 {font-family: "Tahoma", sans-serif}
+</style>
+<section>
+<div class="w3-display-container w3-text-black">
+    <img src="C:\Users\Winona\Downloads\women shop.jpg" alt="shop" style="width:100%">
+    <div class="w3-display-middle w3-large"><h1>Happy Shop</h1></div>
+</section>
+
+</head>
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">ITEMS</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 9am to 5pm</span>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE ITEMS </h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Dress</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Shoes</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Accessories</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <input type="checkbox" id="myCheckbox3" />
+	 <label for="myCheckbox3"> <h1><b>Yellow Sundress Shirt Collar Sleeveless </b> <span class="w3-right w3-tag w3-dark-grey w3-round">P 150.00</span></h1>
+      <hr>
+     <input type="checkbox" id="myCheckbox3" />
+	 <label for="myCheckbox3">
+     <h1><b>Pink linen dress</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">P 190.00</span></h1>
+    </div>
+
+      <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <input type="checkbox" id="myCheckbox3" />
+	 <label for="myCheckbox3">
+	  <h1><b>Slip on rubber shoes</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">P290.00 </span></h1>
+      <hr>
+     <input type="checkbox" id="myCheckbox3" />
+	 <label for="myCheckbox3">
+      <h1><b>Star design pink shoes</b> <span class="w3-right w3-tag w3-dark-grey w3-round">P 250.00</span></h1>
+      <hr>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <input type="checkbox" id="myCheckbox3" />
+	 <label for="myCheckbox3">
+	  <h1><b>Flower Heart Pendant Necklace</b><span class="w3-right w3-tag w3-dark-grey w3-round">P 200.00</span></h1>
+      <hr>
+   <input type="checkbox" id="myCheckbox3" />
+	 <label for="myCheckbox3">
+      <h1><b>Crystal necklace</b> <span class="w3-right w3-tag w3-dark-grey w3-round">P 250.00</span></h1>
+      <hr>
+      
+    </div><br>
+
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find call us at 09567834921</p>
+    <p><span class="w3-tag">FYI!</span> We can deliver it to you as fast as we can. The cut-off time for orders is 9 p.m.</p>
+    <p class="w3-xxlarge"> Reserve or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p
+      <p><input class="text area" type="words" placeholder="Who is going to pick up your order?" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button onclick="myFunction()" type="submit">SEND MESSAGE</button></p>	  
+    </form>
+  </div>
+</div>
+
+
+<script>
+
+// Tabbed Menu
+function myFunction() {
+  alert("Your order is successfully save!");
+}
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("items");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
